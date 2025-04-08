@@ -14,17 +14,5 @@ int main()
 
 	char key = 0;
 
-
-	for (; IsRunning;)
-	{
-		cin >> key;
-		if (key == 'q')
-		{
-			IsRunning = false;
-		}
-		cout << "느려터졌구나 죽어라" << endl << endl;
-		cout << "당신은 죽었습니다!" << endl << endl;
-	}
-
 	return 0;
 }
