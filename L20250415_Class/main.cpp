@@ -1,15 +1,23 @@
 #include <iostream>
 #include "World.h"
 #include "Slime.h"
+#include "Monster.h"
 #include <vector>
 
 using namespace std;
 
 int main()
 {
-	ASlime* Slime = new ASlime;
+	UWorld* MyWorld = new UWorld();
 
-	cout << Slime->GetHP() << endl;
+	delete MyWorld;
+	MyWorld = nullptr;
+
+	//vector<AActor*> AllActors;
+	//for (auto Actor : AllActors)
+	//{
+	//	Actor->Render();
+	//}
 
 	return 0;
 }

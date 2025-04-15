@@ -1,8 +1,8 @@
 #pragma once
 
-//Player has a Gold.
+#include "Character.h"
 
-class APlayer
+class APlayer : public ACharacter
 {
 public:
 

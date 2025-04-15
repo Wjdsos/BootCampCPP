@@ -6,6 +6,7 @@ class ASlime : public AMonster
 {
 public:
 	void Slide();
+
 };
 
 //class AFireSlime :public ASlime
