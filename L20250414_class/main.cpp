@@ -5,15 +5,15 @@
 #include "Monster.h"
 #include "Wall.h"
 #include "World.h"
+#include "Actor.h"
 
 using namespace std;
 
 int main()
 {
-	APlayer* Player = new APlayer;
-
-	delete Player;
-	Player = nullptr;
+	AFloor Floor;
+	AGoal Goal;
+	AMonster Monster;
 
 	return 0;
 }

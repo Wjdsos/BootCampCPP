@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a5933811-1923-4e4a-9486-fc8ae5473131}</ProjectGuid>
-    <RootNamespace>L20250414class</RootNamespace>
+    <ProjectGuid>{74fb4204-292d-4587-9366-ea60a5d3cbff}</ProjectGuid>
+    <RootNamespace>L20250415</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -129,22 +129,17 @@
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Floor.cpp" />
-    <ClCompile Include="Class.cpp" />
-    <ClCompile Include="Goal.cpp" />
+    <ClCompile Include="Gold.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Wall.cpp" />
-    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Floor.h" />
-    <ClInclude Include="Goal.h" />
+    <ClInclude Include="Gold.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Wall.h" />
-    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,10 +1,13 @@
+#include "Actor.h"
 
-class AMonster
+class AMonster : public AActor
 {
 public:
-	int X;
-	int Y;
-	char Shape;
-
 	void Move();
+
+protected:
+	bool Decision()
+	{
+		return true;
+	}
 };

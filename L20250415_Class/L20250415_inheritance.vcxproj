@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a5933811-1923-4e4a-9486-fc8ae5473131}</ProjectGuid>
-    <RootNamespace>L20250414class</RootNamespace>
+    <ProjectGuid>{44e13eee-f023-4cca-8165-827010ae87f1}</ProjectGuid>
+    <RootNamespace>L20250415inheritance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,23 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Actor.cpp" />
-    <ClCompile Include="Floor.cpp" />
-    <ClCompile Include="Class.cpp" />
-    <ClCompile Include="Goal.cpp" />
+    <ClCompile Include="Boar.cpp" />
+    <ClCompile Include="Goblin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="Spawn.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Actor.h" />
-    <ClInclude Include="Floor.h" />
-    <ClInclude Include="Goal.h" />
+    <ClInclude Include="Boar.h" />
+    <ClInclude Include="Goblin.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Wall.h" />
+    <ClInclude Include="Slime.h" />
+    <ClInclude Include="Spawn.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
