@@ -2,11 +2,19 @@
 #include "Windows.h"
 
 #include "Actor.h"
+#include "Renderer.h"
 
 
 AActor::AActor()
 {
 	Shape = ' ';
+}
+
+AActor::AActor(const FVector2D& InVector)
+{
+	Location = InVector;
+	//Location.X = InVector.X;
+	//Location.Y = InVector.Y;
 }
 
 AActor::~AActor()
@@ -25,9 +33,16 @@ void AActor::Tick()
 
 void AActor::Render()
 {
-	COORD Position = { static_cast<SHORT>(Location.X), (SHORT)Location.Y };
+	//COORD Position = { static_cast<SHORT>(Location.X), (SHORT)Location.Y };
 
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Position);
+	//SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Position);
 
-	std::cout << Shape;
+	//std::cout << Shape;
+
+	URenderer::GetInstance()->Render(Location, Shape);
+}
+
+bool AActor::CompareByRendeOrder(const AActor* A, const AActor* B)
+{
+	return (A->RenderOrder) > (B->RenderOrder);
 }
